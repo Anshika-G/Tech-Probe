@@ -1,0 +1,308 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+html { 
+  background:  url(level4.jpg) no-repeat bottom center fixed; 
+  background-size: cover;
+}
+body {
+    line-height:0.5;
+    
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:pointer;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+.container{width: 90%px;}
+.container>div{text-align:left;}
+.container>p{ text-align: left; padding-top: 75px;  }
+.head{
+    margin-left: 0;
+    padding-left: 50px;
+    text-align: left;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+#cover{
+    margin-left: 0px;
+    padding-left: 0;
+}
+#ques{
+    color: #eeff41;
+    font-size: 95%;
+    
+}
+#timer{
+    background-color: #f48fb1;
+    font-family: 'Space Mono', sans-serif;
+    color: 5px solid green;
+    padding: 12px 15px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2% 10% 1% 10%;
+    border-radius:8px;
+    width:80%;
+}
+#hint{
+     background-color: #f48fb1;
+    font-family: 'Space Mono', sans-serif;
+    color: 5px solid green;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2% 2% 1% 5%%;
+    border-radius:8px;
+    width:35%;
+    cursor: pointer;
+}
+#hint:hover{ background-color: #e91e63;cursor: pointer;
+            color:blue; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+
+.head>p{margin-top: 30px; padding-bottom:52px; font-family: 'Space Mono', sans-serif;
+ font-size: 80%;color: #1de9b6;}
+
+.head>h2{ padding-bottom: 25px; font-family: 'Josefin Sans', sans-serif;padding-left: 280px;
+            color: #eeff41; font-size: 20%; font-weight: normal;  font-size: 35px; font-weight: bold; }
+
+.head>h3{ color: #f44336; font-size: 55px; padding-top: 20px; max-width:500px; padding-left:32px; padding-right: 150px;
+    line-height:1;}
+
+.list{ max-width:400px; padding-left: 30%;text-align: center;}
+
+.list>ul>li{display:inline-block; padding:32px; 
+              text-decoration: none; 
+                padding-right: 15px;
+    text-align:center; margin:0px 45px; }
+#line{ text-decoration: none; color: black; }
+.button{  background-color: #18ffff;
+    font-family: 'Space Mono', sans-serif;
+    color: 5px solid blue;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2% 1%;
+    border-radius:8px;
+    width:100%;
+    }
+.button:hover{ background-color:#006064;
+                 color:blue; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+/*gif background
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+html { 
+  background:  url(https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif) no-repeat center center fixed; 
+  background-size: cover;
+}*/
+h1{
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 3em;
+  margin: .2em .5em;
+  color: rgba(0,0,0, 0.3);
+  color: #76ff03;
+  text-align: center;
+}
+body {
+    width: 72%;
+    color: white;
+    font-size: 25px;
+    font-family: 'Advent Pro', sans-serif;
+    margin:0 15%;
+    background-color: black;
+    box-sizing: border-box;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+#QUIT{
+    background-color: #f48fb1;
+    color: 5px solid black;
+    padding: 12px 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 80%;
+    margin: 45px 39%;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+   font-family: 'Space Mono', sans-serif;
+   width: 25%;
+}
+#QUIT:hover{
+    background-color: #e91e63;
+    color: 5px solid black;
+    padding: 12px 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 80%;
+    margin: 45px 39%;
+    margin-top: 20px;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Space Mono', sans-serif;
+   width: 25%;   
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    padding-left: 220px;
+    left: 0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 500px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #006064;
+    margin: auto;
+    width: 80%;
+    font-family: 'Space Mono', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius:8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 20px 16px;
+    background-color: #18ffff;
+    color: white;
+    text-align: center;
+}
+
+.modal-body {padding: 10% 16px;text-align: center;}

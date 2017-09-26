@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+html { 
+  background:  url(https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif) no-repeat center center fixed; 
+  background-size: cover;
+}
+h1{
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 5em;
+  margin: .2em .5em;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+}
+body {
+    font-family: 'Advent Pro', sans-serif;
+     background:  url(https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif) no-repeat center center fixed; 
+  background-size: cover;
+}

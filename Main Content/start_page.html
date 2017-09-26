@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="animatStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Space Mono">
+    <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+    <style type="text/css">
+      /* Main styles  https://static1.squarespace.com/static/5438bd1be4b0446f6692b906/55ffa78ce4b0134b934236f8/55ffa797e4b029a3a198b730/1442817959067/BetaMon.gif?format=750w*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+html { 
+  background:  url(https://static1.squarespace.com/static/5438bd1be4b0446f6692b906/55ffa78ce4b0134b934236f8/55ffa797e4b029a3a198b730/1442817959067/BetaMon.gif?format=750w) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+/*https://static1.squarespace.com/static/5438bd1be4b0446f6692b906/55ffa78ce4b0134b934236f8/55ffa7bee4b03624c517d55f/1442818001817/Goo.gif?format=750w*/
+.text {
+  fill: black;
+  stroke-width: 6.8;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+  background-color: #111;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+/* Other styles */
+html, body {
+  height: 100%;
+}
+body{margin-top: 0;}
+#animateText {
+  background: #111;
+  background-size: .2em 100%;
+  font: 8.5em/1 Open Sans, Impact;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 0 25%;
+}
+
+svg {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  margin-top: 0;
+  font-weight: bold;
+}
+button{
+  position: absolute;background: linear-gradient(to bottom,  #ffff00 0%, #ffa000 100%);
+    text-decoration: none;
+    color: #d50000;
+    font-family: 'Space Mono', sans-serif;
+    color: 5px solid #d50000;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    margin: 28% 38%;
+    border-radius:50px;
+    width:25%;
+    cursor: pointer;
+  }
+button:hover{   background: linear-gradient(to bottom, #ffb300 0%, #ff6f00 100%);
+                color:#004d40; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+}
+    </style>
+</head>
+<body>
+<button><a href="index1.html" id="line" style="text-decoration: none;color: #d50000;">Register</a></button><br><br><br><br><br><br>
+<button><a href="loginAgain.html" id="line" style="text-decoration: none;color:#d50000;">Login</a></button><br><br><br><br><br><br>
+<button><a href="index.html" id="line" style="text-decoration: none;color:#d50000;">Instructions</a></button>
+  <div id="animateText" style="background-color: #111;">
+    
+    <svg viewBox="0 0 1000 300">
+
+    <!-- Symbol -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+              x="50%" y="18%" dy=".35em" >
+         TECH PROBE
+       </text>
+    </symbol>
+
+    <!-- Duplicate symbols -->
+    <use xlink:href="#s-text" class="text"
+              ></use>
+    <use xlink:href="#s-text" class="text"
+              ></use>
+    <use xlink:href="#s-text" class="text"
+              ></use>
+    <use xlink:href="#s-text" class="text"
+              ></use>
+    <use xlink:href="#s-text" class="text"
+              ></use>
+
+    </svg>
+  </div>
+   
+</body>
+</html>
