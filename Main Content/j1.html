@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Space Mono">
+</head>
+<body>
+        <div class="container" style="font-weight:bold"> <button id='timer'><p id="quiz-time-left"></p></button></div>
+<script type="text/javascript">
+var total_seconds=60;
+var c_minutes=parseInt(total_seconds/60);
+var c_seconds=parseInt(total_seconds%60);
+function CheckTime(){
+document.getElementById("quiz-time-left").innerHTML
+='Time Left: '+c_minutes+'minutes '+c_seconds+ 'seconds';
+if(total_seconds<=0)
+{
+set.Timeout('document.quiz.submit()',1);
+}
+else
+{	total_seconds=total_seconds-1;
+c_minutes=parseInt(total_seconds/60);
+c_seconds=parseInt(total_seconds%60);
+setTimeout("CheckTime()",1000);
+}
+}
+setTimeout("CheckTime()",1000);
+</script>
+ 
+        <div class="head">
+            <h3><b><i><marquee>LEVEL 1 </marquee></i></b></h3><br><br>
+            <h2> QUESTION 1 </h2>
+             <p id="ques">----Most appropriate software for calculating in computer----</p>
+        </div>
+        <div class="list">
+                <ul style="list-style-type:none">
+                    <button class="button"><li><a href="j2.html?quiz-time-left=total_seconds" id="line">Microsoft Excel</a></li></button>
+                    <button class="button"><li><a href="quit.html" id="line">Microsoft Paint</a></li></button>
+            </ul>
+            <ul style="list-style-type:none" >
+                <button class="button"><li> <a href="quit.html" id="line">Microsoft Office</a></li></button>
+                <button class="button"><li> <a href="quit.html" id="line">Microsoft Word</a></li></button>
+            </ul>
+        </div>
+        <div style="margin-left: 40%;">
+            <br>
+            <button id="hint"><a href="hintlevel1ques1.html" id="line">See Hint</a></button>
+        </div>
+        <button id="QUIT"><a href="quit_page.html" id="line">Quit Game</a></button>
+    </div>
+    </body>
+</html>
+    
+
