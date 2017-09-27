@@ -15,6 +15,12 @@ html {
 }
 
 /*https://static1.squarespace.com/static/5438bd1be4b0446f6692b906/55ffa78ce4b0134b934236f8/55ffa7bee4b03624c517d55f/1442818001817/Goo.gif?format=750w*/
+$yellow:  #add356;
+$teal:    #00dfa6;
+$lorange: #ffcb52;
+$dorange: #ff451f;
+$blue:    #3dade9;
+$purple:  #bf2fcb;
 .text {
   fill: black;
   stroke-width: 6.8;
@@ -71,7 +77,7 @@ html {
 html, body {
   height: 100%;
 }
-body{margin-top: 0;}
+body{margin-top: 5%;}
 #animateText {
   background: #111;
   background-size: .2em 100%;
@@ -89,29 +95,40 @@ svg {
   font-weight: bold;
 }
 button{
-  position: absolute;background: linear-gradient(to bottom,  #ffff00 0%, #ffa000 100%);
+  position: absolute;
+  background: black;
+  border-color: #d50000 ;
+  border-width: 20px;
     text-decoration: none;
-    color: #d50000;
+    color: #d50000; 
     font-family: 'Space Mono', sans-serif;
     color: 5px solid #d50000;
-    padding: 15px 15px;
+    padding: 7% 1%;
+    padding-bottom: 8%;
     text-align: center;
     display: inline-block;
-    font-size: 30px;
-    margin: 28% 38%;
-    border-radius:50px;
-    width:25%;
+    font-size: 28px;
+    margin: 27% 19%;
+    text-align: center;
+    border-radius:500px;
+    width:17%;
     cursor: pointer;
   }
+  .break{ margin-left: 64%; }
+  .break1{ margin-left: 42%; }
 button:hover{   background: linear-gradient(to bottom, #ffb300 0%, #ff6f00 100%);
                 color:#004d40; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
 }
     </style>
 </head>
 <body>
-<button><a href="index1.html" id="line" style="text-decoration: none;color: #d50000;">Register</a></button><br><br><br><br><br><br>
-<button><a href="loginAgain.html" id="line" style="text-decoration: none;color:#d50000;">Login</a></button><br><br><br><br><br><br>
-<button><a href="index.html" id="line" style="text-decoration: none;color:#d50000;">Instructions</a></button>
+<div>
+	
+<button><a href="index1.html" id="line" style="text-decoration: none;color: #d50000;">Register</a></button>
+<button class="break1" ><a href="loginAgain.html" id="line" style="text-decoration: none;color:#d50000;">Login</a></button>
+<button class="break" ><a href="index.html" id="line" style="text-decoration: none;color:#d50000;">Instructions</a></button>
+</div>
+
   <div id="animateText" style="background-color: #111;">
     
     <svg viewBox="0 0 1000 300">

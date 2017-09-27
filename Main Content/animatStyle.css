@@ -68,7 +68,7 @@ html, body {
   background-size: .2em 100%;
   font: 4.5em/1 Open Sans, Impact;
   text-transform: uppercase;
-  margin: 0 25%;
+  margin: 5% 25%;
 }
 
 svg {
@@ -87,9 +87,10 @@ button{
     text-align: center;
     display: inline-block;
     font-size: 30px;
-    margin: 28% 35%;
+    margin: 28% 0%;
+    width:10%;
+    height: 10%;
     border-radius:8px;
-    width:30%;
     cursor: pointer;
   }
 button:hover{ background-color:  #18ffff;
